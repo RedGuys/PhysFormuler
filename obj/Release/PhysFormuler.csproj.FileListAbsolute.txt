@@ -1,0 +1,15 @@
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\bin\Release\PhysFormuler.exe.config
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\bin\Release\PhysFormuler.exe
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\bin\Release\PhysFormuler.pdb
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\MainWindow.g.cs
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\App.g.cs
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\PhysFormuler_MarkupCompile.cache
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\PhysFormuler_MarkupCompile.lref
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\MainWindow.baml
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\PhysFormuler.g.resources
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\PhysFormuler.Properties.Resources.resources
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\PhysFormuler.csproj.GenerateResource.cache
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\PhysFormuler.csproj.CoreCompileInputs.cache
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\PhysFormuler.exe
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\PhysFormuler.pdb
+C:\Users\Илья\Source\Repos\Dev_PhysFormuler\PhysFormuler\obj\Release\PhysFormuler.csprojAssemblyReference.cache
