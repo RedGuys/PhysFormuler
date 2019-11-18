@@ -29,6 +29,7 @@ namespace PhysFormuler
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private bool IsReady(TextBox box,string type)

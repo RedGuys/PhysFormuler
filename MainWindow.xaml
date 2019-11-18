@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PhysFormuler"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="PhysFormuler.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="PhysFormuler" Height="450" Width="800">
     <Grid>
         <TextBox x:Name="U" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TC">
             <TextBox.DataContext>
