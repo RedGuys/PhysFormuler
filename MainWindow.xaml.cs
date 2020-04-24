@@ -18,7 +18,7 @@ namespace PhysFormuler
 {
     public static class Numbers
     {
-        public static float I, U, R, q, A, S, p, l, t;
+        public static float I, U, R, q, A, S, p, l, temp;
     }
 
     /// <summary>
@@ -32,32 +32,22 @@ namespace PhysFormuler
             
         }
 
-        private bool IsReady(TextBox box,string type)
+        private bool IsReady(TextBox box, string type)
         {
-            if(type != "T")
+            if (box.Text != "")
             {
-                if(box.Text != "")
-                {
-                    if(Convert.ToDouble(box.Text) != 0)
-                    {
-                        return true;
-                    } else
-                    {
-                        return false;
-                    }
-                } else
-                {
-                    return false;
-                }
-            } else
-            {
-                if(box.Text != "")
+                if (Convert.ToDouble(box.Text) != 0)
                 {
                     return true;
-                } else
+                }
+                else
                 {
                     return false;
                 }
+            }
+            else
+            {
+                return false;
             }
         }
 
@@ -146,7 +136,7 @@ namespace PhysFormuler
                     if (!Math.Round(Numbers.R, 4).Equals(R.Text) && IsReady(R, type)) Numbers.R = (float)Convert.ToDouble(R.Text);
                     if (!Math.Round(Numbers.U, 4).Equals(U.Text) && IsReady(U, type)) Numbers.U = (float)Convert.ToDouble(U.Text);
                     if (!Math.Round(Numbers.q, 4).Equals(q.Text) && IsReady(q, type)) Numbers.q = (float)Convert.ToDouble(q.Text);
-                    if (!Math.Round(Numbers.t, 4).Equals(t.Text) && IsReady(t, type)) Numbers.t = (float)Convert.ToDouble(t.Text);
+                    if (!Math.Round(Numbers.temp, 4).Equals(temp.Text) && IsReady(temp, type)) Numbers.temp = (float)Convert.ToDouble(temp.Text);
                     if (IsReady(I, type))
                         {
                             if (IsReady(R, type))
@@ -161,12 +151,12 @@ namespace PhysFormuler
                             }
                             if(IsReady(q, type))
                             {
-                                Numbers.t = Numbers.q / Numbers.I;
-                                t.Text = Math.Round(Numbers.t, 4).ToString();
+                                Numbers.temp = Numbers.q / Numbers.I;
+                                temp.Text = Math.Round(Numbers.temp, 4).ToString();
                             }
-                            if(IsReady(t, type))
+                            if(IsReady(temp, type))
                             {
-                                Numbers.q = Numbers.I * Numbers.t;
+                                Numbers.q = Numbers.I * Numbers.temp;
                                 q.Text = Math.Round(Numbers.q, 4).ToString();
                             }
                         }
@@ -175,7 +165,7 @@ namespace PhysFormuler
                     if (!Math.Round(Numbers.U, 4).Equals(U.Text) && IsReady(U, type)) Numbers.U = (float)Convert.ToDouble(U.Text);
                     if (!Math.Round(Numbers.q, 4).Equals(q.Text) && IsReady(q, type)) Numbers.q = (float)Convert.ToDouble(q.Text);
                     if (!Math.Round(Numbers.I, 4).Equals(I.Text) && IsReady(I, type)) Numbers.I = (float)Convert.ToDouble(I.Text);
-                    if (!Math.Round(Numbers.t, 4).Equals(t.Text) && IsReady(t, type)) Numbers.t = (float)Convert.ToDouble(t.Text);
+                    if (!Math.Round(Numbers.temp, 4).Equals(temp.Text) && IsReady(temp, type)) Numbers.temp = (float)Convert.ToDouble(temp.Text);
                     if (!Math.Round(Numbers.A, 4).Equals(A.Text) && IsReady(A, type)) Numbers.A = (float)Convert.ToDouble(A.Text);
                     if (IsReady(q, type))
                         {
@@ -186,12 +176,12 @@ namespace PhysFormuler
                             }
                             if(IsReady(I, type))
                             {
-                                Numbers.t = Numbers.q / Numbers.I;
-                                t.Text = Math.Round(Numbers.t, 4).ToString();
+                                Numbers.temp = Numbers.q / Numbers.I;
+                                temp.Text = Math.Round(Numbers.temp, 4).ToString();
                             }
-                            if(IsReady(t, type))
+                            if(IsReady(temp, type))
                             {
-                                Numbers.I = Numbers.q / Numbers.t;
+                                Numbers.I = Numbers.q / Numbers.temp;
                                 I.Text = Math.Round(Numbers.I, 4).ToString();
                             }
                             if(IsReady(A, type))
@@ -219,20 +209,20 @@ namespace PhysFormuler
                             }
                         }
                         break;
-                    case "t":
+                    case "temp":
                     if (!Math.Round(Numbers.I, 4).Equals(I.Text) && IsReady(I, type)) Numbers.I = (float)Convert.ToDouble(I.Text);
-                    if (!Math.Round(Numbers.t, 4).Equals(t.Text) && IsReady(t, type)) Numbers.t = (float)Convert.ToDouble(t.Text);
+                    if (!Math.Round(Numbers.temp, 4).Equals(temp.Text) && IsReady(temp, type)) Numbers.temp = (float)Convert.ToDouble(temp.Text);
                     if (!Math.Round(Numbers.q, 4).Equals(q.Text) && IsReady(q, type)) Numbers.q = (float)Convert.ToDouble(q.Text);
-                    if (IsReady(t, type))
+                    if (IsReady(temp, type))
                         {
                             if(IsReady(I, type))
                             {
-                                Numbers.q = Numbers.I * Numbers.t;
+                                Numbers.q = Numbers.I * Numbers.temp;
                                 q.Text = Math.Round(Numbers.q, 4).ToString();
                             }
                             if(IsReady(q, type))
                             {
-                                Numbers.I = Numbers.q / Numbers.t;
+                                Numbers.I = Numbers.q / Numbers.temp;
                                 I.Text = Math.Round(Numbers.I, 4).ToString();
                             }
                         }

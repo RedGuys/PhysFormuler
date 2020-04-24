@@ -32,7 +32,7 @@
             </TextBox.DataContext>
         </TextBox>
         <Label Content="Кулон/q/Заряд атома" HorizontalAlignment="Left" Margin="135,100,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="t" HorizontalAlignment="Left" Height="23" Margin="281,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TC">
+        <TextBox x:Name="time" HorizontalAlignment="Left" Height="23" Margin="281,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TC">
             <TextBox.DataContext>
                 <System:Double>0</System:Double>
             </TextBox.DataContext>
@@ -44,7 +44,7 @@
             </TextBox.DataContext>
         </TextBox>
         <Label Content="Джоули/A/Работа тока" HorizontalAlignment="Left" Margin="135,131,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="T" HorizontalAlignment="Left" Height="23" Margin="520,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TC">
+        <TextBox x:Name="temp" HorizontalAlignment="Left" Height="23" Margin="520,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TC">
             <TextBox.DataContext>
                 <System:Double>0</System:Double>
             </TextBox.DataContext>
