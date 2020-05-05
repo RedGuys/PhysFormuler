@@ -36,19 +36,14 @@ namespace PhysFormuler
         {
             if (box.Text != "")
             {
-                if (Convert.ToDouble(box.Text) != 0)
+                double number;
+                if (Double.TryParse(box.Text,out number))
                 {
-                    return true;
+                    return !double.IsNaN(number);
                 }
-                else
-                {
-                    return false;
-                }
+                else return false;
             }
-            else
-            {
-                return false;
-            }
+            else return false;
         }
 
         private void Update(string type)
@@ -101,7 +96,7 @@ namespace PhysFormuler
                             if(IsReady(U, type))
                             {
                                 Numbers.I = Numbers.U / Numbers.R;
-                                I.Text = Math.Round(Numbers.I, 4).ToString();
+                            I.Text = Math.Round(Numbers.I, 4).ToString();
                             }
                             if(IsReady(I, type))
                             {
