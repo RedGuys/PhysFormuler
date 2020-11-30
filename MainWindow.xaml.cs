@@ -177,21 +177,25 @@ namespace PhysFormuler
                         {
                             Numbers.A = Numbers.U * Numbers.q;
                             A.Text = Math.Round(Numbers.A, 4).ToString();
+                            Logger.Items.Add(Numbers.U + "В * " + Numbers.q + "Кл = " + Numbers.A + "Дж");
                         }
                         if (IsReady(I, type))
                         {
                             Numbers.temp = Numbers.q / Numbers.I;
                             temp.Text = Math.Round(Numbers.temp, 4).ToString();
+                            Logger.Items.Add(Numbers.q + "Кл / " + Numbers.I + "А = " + Numbers.temp + "C");
                         }
                         if (IsReady(temp, type))
                         {
                             Numbers.I = Numbers.q / Numbers.temp;
                             I.Text = Math.Round(Numbers.I, 4).ToString();
+                            Logger.Items.Add(Numbers.q + "Кл / " + Numbers.temp + "C = " + Numbers.I + "А");
                         }
                         if (IsReady(A, type))
                         {
                             Numbers.U = Numbers.A * Numbers.q;
                             U.Text = Math.Round(Numbers.U, 4).ToString();
+                            Logger.Items.Add(Numbers.A + "Дж * " + Numbers.q + "КЛ = " + Numbers.U + "В");
                         }
                     }
                     break;
