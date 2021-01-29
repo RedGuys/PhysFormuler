@@ -209,11 +209,13 @@ namespace PhysFormuler
                         {
                             Numbers.q = Numbers.A / Numbers.U;
                             q.Text = Math.Round(Numbers.q, 4).ToString();
+                            Logger.Items.Add(Numbers.A + "Дж / " + Numbers.U + "В = " + Numbers.q + "КЛ");
                         }
                         if (IsReady(q, type))
                         {
                             Numbers.U = Numbers.A * Numbers.q;
                             U.Text = Math.Round(Numbers.U, 4).ToString();
+                            Logger.Items.Add(Numbers.A + "Дж / " + Numbers.q + "КЛ = " + Numbers.U + "В");
                         }
                     }
                     break;
