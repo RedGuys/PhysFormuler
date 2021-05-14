@@ -252,11 +252,15 @@ namespace PhysFormuler
                             {
                                 Numbers.R = Numbers.p * Numbers.l / Numbers.S;
                                 R.Text = Math.Round(Numbers.R, 4).ToString();
+                                Logger.Items.Add(Numbers.p + "ом*м * " + Numbers.l + "м / " + Numbers.S + "мм^2 = " +
+                                                 Numbers.R + "ом");
                             }
                             if (IsReady(R, type))
                             {
                                 Numbers.S = Numbers.p * Numbers.l / Numbers.R;
                                 S.Text = Math.Round(Numbers.S, 4).ToString();
+                                Logger.Items.Add(Numbers.p + "ом*м * " + Numbers.l + "м / " + Numbers.R + "ом = " +
+                                                 Numbers.S + "мм^2");
                             }
                         }
                         if (IsReady(R, type))
@@ -265,6 +269,7 @@ namespace PhysFormuler
                             {
                                 Numbers.l = Numbers.R * Numbers.S / Numbers.p;
                                 l.Text = Math.Round(Numbers.l, 4).ToString();
+                                Logger.Items.Add(Numbers.R + "ом * " + Numbers.S + "мм");
                             }
                         }
                     }
